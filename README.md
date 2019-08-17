@@ -1,7 +1,10 @@
-# water-quality-monitor
+# Water Quality Monitor | 🏊 Smart Swimmingpool
 
-## Hardware
+ESP8266 based circuit to monitor quality of water.
 
-- ESP8266 NodeMCU Controller ([Amazon](https://amzn.to/2DPf0LJ))
-- https://wiki.wemos.cc/products:d1:d1_mini
-- [Liquid 0-14 PH Value Detection Sensor + BNC Block PH Electrode Probe](https://www.aliexpress.com/item/32797327021.html)
+# Features
+
+- [ ] Monitore pH value
+- [ ] Monitore Cloride
+- [ ] Homie 3.0 compatible data exchange
+- [ ] Display
