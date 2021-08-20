@@ -1,6 +1,6 @@
 # Water Quality Monitor | 🏊 Smart Swimmingpool
 
-[![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/smart-swimming-pool)
+Discussions: <https://github.com/smart-swimmingpool/smart-swimmingpool.github.io/discussions>
 
 ESP8266 based circuit to monitor quality of water.
 
