@@ -7,14 +7,14 @@ carefully before submitting your first pull request.
 
 ## Table of Contents
 
-- [Code of Conduct](#code-of-conduct)
-- [How to Contribute](#how-to-contribute)
-- [Getting Started](#getting-started)
-- [Development Workflow](#development-workflow)
-- [Coding Standards](#coding-standards)
-- [Pull Request Process](#pull-request-process)
-- [Commit Message Guidelines](#commit-message-guidelines)
-- [Quality Gates](#quality-gates)
+- [Code of Conduct](#Code of Conduct)
+- [How to Contribute](#How to Contribute)
+- [Getting Started](#Getting Started)
+- [Development Workflow](#Development Workflow)
+- [Coding Standards](#Coding Standards)
+- [Pull Request Process](#Pull Request Process)
+- [Commit Message Guidelines](#Commit Message Guidelines)
+- [Quality Gates](#Quality Gates)
 
 ---
 
