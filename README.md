@@ -9,7 +9,7 @@ Discussions: <https://github.com/smart-swimmingpool/smart-swimmingpool.github.io
 
 ESP32-based circuit to monitor quality of water in your swimming pool.
 
-## ✨ Features
+## Features
 
 - 🔬 **pH Value Monitoring** - Track water acidity/alkalinity
 - 🧪 **Chloride Monitoring** - Measure chlorine levels
@@ -17,7 +17,7 @@ ESP32-based circuit to monitor quality of water in your swimming pool.
 - 📺 **Display Support** - Local display of water quality data
 - 🌐 **MQTT Integration** - Seamless integration with Home Assistant and other MQTT clients
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -55,14 +55,14 @@ ESP32-based circuit to monitor quality of water in your swimming pool.
    pio run -e esp32dev -t monitor
    ```
 
-## 📚 Documentation
+## Documentation
 
 - [Hardware Guide](docs/hardware-guide.md) - Assembly and wiring instructions
 - [Contributing Guide](CONTRIBUTING.md) - How to contribute to the project
 - [Code of Conduct](CODE_OF_CONDUCT.md) - Expected behavior guidelines
 - [Changelog](CHANGELOG.md) - Release history and changes
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Please read our [Contributing Guide](CONTRIBUTING.md) before submitting pull requests.
 
