@@ -2,10 +2,16 @@
 # MegaLinter configuration file
 # https://megalinter.github.io/configuration/
 
+# Enable only YAML linter
 enable:
   - YAML
 
 disable_all: true
+
+# Only validate YAML files
+filter_regex_include:
+  - '.*\.yml$'
+  - '.*\.yaml$'
 
 # Exclude patterns
 filter_regex_exclude:
