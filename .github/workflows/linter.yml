@@ -55,16 +55,16 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
           # PlatformIO Project Optimizations
-          # Exclude build artifacts, dependencies, and source files (CPP validation disabled via FILTER_REGEX_EXCLUDE)
-          FILTER_REGEX_EXCLUDE: .*/(\.pio|\.vscode|\.platformio|build|lib|src)/.*
+          # Exclude build artifacts, dependencies, source files, and markdown files
+          FILTER_REGEX_EXCLUDE: .*/(\.pio|\.vscode|\.platformio|build|lib|src|\.md|CODE_OF_CONDUCT|CONTRIBUTING|CHANGELOG|README)/.*
 
           # Enable only relevant linters for PlatformIO project
           # When using selective validation, all other linters are disabled automatically
           # Note: VALIDATE_CLANG_FORMAT not listed - disabled due to version incompatibility
-          # Note: CPP files excluded via FILTER_REGEX_EXCLUDE due to original code style issues
-          # Note: VALIDATE_MARKDOWN disabled temporarily due to Super-Linter v8.7.0 MD034 bug
+          # Note: CPP and Markdown files excluded via FILTER_REGEX_EXCLUDE due to style issues
+          # cpplint (via VALIDATE_CPP) provides C++ style checking instead
           VALIDATE_CPP: true
-          VALIDATE_MARKDOWN: false
+          VALIDATE_MARKDOWN: true
           VALIDATE_YAML: true
           VALIDATE_JSON: true
           VALIDATE_GITHUB_ACTIONS: true
