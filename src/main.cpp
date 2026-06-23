@@ -87,9 +87,11 @@ void setup() {
     ;  // wait for serial port to connect. Needed for native USB port only
   }
 
-  Serial.println(F("Water Quality Monitor - Smart Swimmingpool"));
-  Serial.println(F("Firmware: water-quality-monitor v1.0.0"));
-  Serial.printf(F("Free heap: %d bytes\n"), ESP.getFreeHeap());
+  Serial.println("Water Quality Monitor - Smart Swimmingpool");
+  Serial.println("Firmware: water-quality-monitor v1.0.0");
+  Serial.print("Free heap: ");
+  Serial.print(ESP.getFreeHeap());
+  Serial.println(" bytes");
 }
 
 /**
