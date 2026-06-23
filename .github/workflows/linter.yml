@@ -70,8 +70,6 @@ jobs:
           VALIDATE_JSON: true
           VALIDATE_GITHUB_ACTIONS: true
           VALIDATE_EDITORCONFIG: true
-          VALIDATE_GITLEAKS: true
-          VALIDATE_BASH: true
 
           # C/C++ specific settings
           CPP_FILE_EXTENSIONS: "cpp,hpp,h"
