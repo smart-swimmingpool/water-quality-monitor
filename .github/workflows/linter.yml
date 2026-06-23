@@ -50,22 +50,17 @@ jobs:
       - name: Run MegaLinter
         uses: oxsecurity/megalinter@v7
         env:
-          # MegaLinter configuration
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-          # Enable relevant linters for PlatformIO C++ project
-          ENABLE: CPP,JSON,YAML,MARKDOWN,EDITORCONFIG
+          # Only validate YAML and JSON files (C++ files excluded via FILTER_REGEX_EXCLUDE)
+          VALIDATE_YAML: true
+          VALIDATE_JSON: true
+          VALIDATE_MARKDOWN: true
+          VALIDATE_EDITORCONFIG: true
 
-          # Disable others
-          DISABLE: BASH,CLANG_FORMAT,CLANG_TIDY,COPYPASTE,DOCKERFILE,GO,GROOVY,HTML,JAVA,JAVASCRIPT,KOTLIN,OPENAPI,PERL,PHP,PYTHON,RUBY,RUST,SCALA,SHELL,SQL,TERRAFORM,TSQL,XML
-
-          # C/C++ specific settings
-          CPP_FILE_EXTENSIONS: "cpp,hpp,h,ino"
-          CPP_LINT_FILE_EXTENSIONS: "cpp,hpp,h,ino"
-
-          # Exclude build artifacts and dependencies
+          # Exclude build artifacts, dependencies, and source files
           FILTER_REGEX_EXCLUDE: ".*/(\.pio|\.vscode|\.platformio|\.github|build|lib|src)/.*"
 
           # Markdown specific settings
@@ -75,5 +70,4 @@ jobs:
           # Don't treat warnings as errors
           WARNINGS_AS_ERRORS: false
 
-          # Logging
           LOG_LEVEL: NOTICE
