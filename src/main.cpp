@@ -17,7 +17,6 @@
 */
 
 #include <Arduino.h>
-#include <Homie.h>
 
 #ifdef ESP32
 const uint8_t SENSOR_PIN = 0; //pH meter Analog output to Analog Input
@@ -84,27 +83,19 @@ double avergearray(int* arr, int number){
 void setup() {
   Serial.begin(SERIAL_SPEED);
 
-
   while (!Serial) {
     ;  // wait for serial port to connect. Needed for native USB port only
   }
 
-  Homie_setFirmware("water-quality-monitor", "1.0.0");  // The underscore is not a typo! See Magic bytes
-  Homie_setBrand("smart-swimmingpool");
-
-
-  Homie.setup();
-
-  Homie.getLogger() << F("Free heap: ") << ESP.getFreeHeap() << endl;
+  Serial.println(F("Water Quality Monitor - Smart Swimmingpool"));
+  Serial.println(F("Firmware: water-quality-monitor v1.0.0"));
+  Serial.printf(F("Free heap: %d bytes\n"), ESP.getFreeHeap());
 }
 
 /**
  * Main loop of ESP.
  */
 void loop() {
-
-  Homie.loop();
-
   static unsigned long samplingTime = millis();
   static unsigned long printTime = millis();
   static float pHValue, voltage;
