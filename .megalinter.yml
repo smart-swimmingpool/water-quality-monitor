@@ -37,7 +37,7 @@ disable:
 
 # Exclude patterns
 filter_regex_exclude:
-  - .*/(\\.pio|\\.vscode|\\.platformio|\\.github|build|lib|src)/.*
+  - '.*(\.pio|\.vscode|\.platformio|\.github|build|lib|src)/.*'
 
 # Markdown settings
 markdown_lint_line_length: 150
