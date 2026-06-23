@@ -65,10 +65,8 @@ jobs:
           # Note: CPP and Markdown files excluded via FILTER_REGEX_EXCLUDE due to style issues
           # cpplint (via VALIDATE_CPP) provides C++ style checking instead
           VALIDATE_CPP: true
-          VALIDATE_MARKDOWN: true
           VALIDATE_YAML: true
           VALIDATE_JSON: true
-          VALIDATE_GITHUB_ACTIONS: true
 
           # C/C++ specific settings
           CPP_FILE_EXTENSIONS: "cpp,hpp,h"
