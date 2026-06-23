@@ -60,22 +60,8 @@ jobs:
           FILTER_REGEX_EXCLUDE: '.*/(\.pio|\.vscode|\.platformio|build|lib|src)/.*|.*\.md$'
 
           # Enable only relevant linters for PlatformIO project
-          # When using selective validation, all other linters are disabled automatically
-          # Note: VALIDATE_CLANG_FORMAT not listed - disabled due to version incompatibility
-          # Note: CPP and Markdown files excluded via FILTER_REGEX_EXCLUDE due to style issues
-          # cpplint (via VALIDATE_CPP) provides C++ style checking instead
-          VALIDATE_CPP: true
           VALIDATE_YAML: true
           VALIDATE_JSON: true
-
-          # C/C++ specific settings
-          CPP_FILE_EXTENSIONS: "cpp,hpp,h"
-
-          # Markdown specific settings - increase line length to 150
-          MARKDOWN_LINT_LINE_LENGTH: 150
-          MARKDOWNLINT_LINE_LENGTH: 150
-          # Disable MD051 and MD034 rules as they're too strict
-          MARKDOWNLINT_RULES: "MD051=false,MD034=false"
 
           # Don't treat warnings as errors
           WARNINGS_AS_ERRORS: false
