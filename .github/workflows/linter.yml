@@ -61,7 +61,7 @@ jobs:
           VALIDATE_EDITORCONFIG: true
 
           # Exclude build artifacts, dependencies, and source files
-          FILTER_REGEX_EXCLUDE: ".*/(\.pio|\.vscode|\.platformio|\.github|build|lib|src)/.*"
+          FILTER_REGEX_EXCLUDE: ".*/(\\.pio|\\.vscode|\\.platformio|\\.github|build|lib|src)/.*"
 
           # Markdown specific settings
           MARKDOWN_LINT_LINE_LENGTH: 150
