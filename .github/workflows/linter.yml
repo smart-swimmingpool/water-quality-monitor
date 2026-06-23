@@ -33,8 +33,8 @@ permissions:
 # Set the Job #
 ###############
 jobs:
-  super-linter:
-    name: Super-Linter
+  mega-linter:
+    name: MegaLinter
     runs-on: ubuntu-latest
 
     permissions:
@@ -44,6 +44,36 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
 
-      - name: Skip Super-Linter
-        run: echo "Super-Linter disabled due to v8.6.0 compatibility issues"
+      - name: Run MegaLinter
+        uses: oxsecurity/megalinter@v7
+        env:
+          # MegaLinter configuration
+          VALIDATE_ALL_CODEBASE: false
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+          # Enable relevant linters for PlatformIO C++ project
+          ENABLE: CPP,JSON,YAML,MARKDOWN,EDITORCONFIG
+
+          # Disable others
+          DISABLE: BASH,CLANG_FORMAT,CLANG_TIDY,COPYPASTE,DOCKERFILE,GO,GROOVY,HTML,JAVA,JAVASCRIPT,KOTLIN,OPENAPI,PERL,PHP,PYTHON,RUBY,RUST,SCALA,SHELL,SQL,TERRAFORM,TSQL,XML
+
+          # C/C++ specific settings
+          CPP_FILE_EXTENSIONS: "cpp,hpp,h,ino"
+          CPP_LINT_FILE_EXTENSIONS: "cpp,hpp,h,ino"
+
+          # Exclude build artifacts and dependencies
+          FILTER_REGEX_EXCLUDE: ".*/(\.pio|\.vscode|\.platformio|\.github|build|lib|src)/.*"
+
+          # Markdown specific settings
+          MARKDOWN_LINT_LINE_LENGTH: 150
+          MARKDOWNLINT_LINE_LENGTH: 150
+
+          # Don't treat warnings as errors
+          WARNINGS_AS_ERRORS: false
+
+          # Logging
+          LOG_LEVEL: NOTICE
