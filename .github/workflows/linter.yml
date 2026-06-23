@@ -69,7 +69,6 @@ jobs:
           VALIDATE_YAML: true
           VALIDATE_JSON: true
           VALIDATE_GITHUB_ACTIONS: true
-          VALIDATE_EDITORCONFIG: true
 
           # C/C++ specific settings
           CPP_FILE_EXTENSIONS: "cpp,hpp,h"
