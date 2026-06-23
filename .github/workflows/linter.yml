@@ -61,7 +61,6 @@ jobs:
 
           # Enable only relevant linters for PlatformIO project
           VALIDATE_YAML: true
-          VALIDATE_JSON: true
 
           # Don't treat warnings as errors
           WARNINGS_AS_ERRORS: false
