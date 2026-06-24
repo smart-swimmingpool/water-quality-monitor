@@ -22,12 +22,7 @@ DISABLE:
 
 # Filter patterns - exclude build artifacts and dependencies
 # Must be a string, not a list
-FILTER_REGEX_EXCLUDE: |
-  .*/(\.pio|\.vscode|\.platformio|build|\.git|node_modules)/.*
-  .*/lib/.*
-  .*/data/.*
-  .*\.min\.(js|css)
-  .*/test/.*
+FILTER_REGEX_EXCLUDE: ".*\/(\.pio|\.vscode|\.platformio|build|\.git|node_modules|lib|data|test)\/.*|.*\.min\.(js|css)"
 
 # C++ specific settings
 CPP_FILE_EXTENSIONS: "cpp,hpp,h,c"
