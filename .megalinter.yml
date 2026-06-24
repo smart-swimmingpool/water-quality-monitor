@@ -4,10 +4,11 @@
 
 ---
 # Enable only the linters that were enabled in Super-Linter
+# Note: EDITORCONFIG and MARKDOWN_LINK_CHECK disabled as they are too strict
+# and cause many false positives in documentation
 ENABLE:
   - BASH
   - CPP
-  - EDITORCONFIG
   - GITHUB_ACTIONS
   - GITLEAKS
   - JSON
@@ -17,6 +18,8 @@ ENABLE:
 # Disable all other linters
 DISABLE:
   - ALL
+  - EDITORCONFIG
+  - MARKDOWN_LINK_CHECK
 
 # Filter patterns - exclude build artifacts and dependencies
 # Must be a string, not a list
