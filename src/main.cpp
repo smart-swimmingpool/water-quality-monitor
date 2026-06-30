@@ -1,3 +1,7 @@
+// Copyright (c) 2018-2026 Smart Swimming Pool, Stephan Strittmatter
+//
+// SPDX-License-Identifier: MIT
+
 /**
  * ESP32 zur Steuerung des Pools:
  * - 2 Temperaturfühler
