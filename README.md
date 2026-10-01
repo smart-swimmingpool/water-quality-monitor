@@ -1,39 +1,39 @@
-# Water Quality Monitor | \ud83c\udfca Smart Swimming Pool
+# Water Quality Monitor | 🏊 Smart Swimming Pool
 
 [![Smart Swimmingpool](https://img.shields.io/badge/%F0%9F%8F%8A%20-Smart%20Swimmingpool-blue.svg)](https://github.com/smart-swimmingpool)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
 
-> **\u26a0\ufe0f WARNING: This project involves water chemistry and electrical measurements!**
+> **⚠️ WARNING: This project involves water chemistry and electrical measurements!**
 >
-> - **Handle chemical sensors with care** \u2014 Some sensors may require calibration with chemical solutions
+> - **Handle chemical sensors with care** — Some sensors may require calibration with chemical solutions
 > - **Follow sensor manufacturer instructions** for proper handling and maintenance
-> - **Keep electronics away from water** \u2014 Use waterproof enclosures for outdoor installation
+> - **Keep electronics away from water** — Use waterproof enclosures for outdoor installation
 > - **This project is NOT certified for commercial use. For personal use only!**
 
 ---
 
-## \u2728 Overview
+## ✨ Overview
 
 The **Water Quality Monitor** is an **ESP8266-based circuit** designed to monitor the chemical quality of your swimming pool water. It provides real-time measurements of key water parameters to ensure safe and comfortable swimming conditions.
 
-**Current Status:** \ud83d\udc62 **Under Development** \u2014 This module is in the planning and early development phase.
+**Current Status:** 👢 **Under Development** — This module is in the planning and early development phase.
 
 ---
 
-## \u2728 Features
+## ✨ Features
 
-### \u2705 Planned Features
+### ✅ Planned Features
 
 | Feature | Description | Status |
 |---------|-------------|--------|
-| **pH Monitoring** | Measure water pH level (0-14 scale) | \ud83d\udcf0 Planned |
-| **Chlorine Monitoring** | Measure chlorine concentration | \ud83d\udcf0 Planned |
-| **Homie 3.0 Compatibility** | Standard MQTT messaging protocol | \ud83d\udcf0 Planned |
-| **Display Integration** | Local display for readings | \ud83d\udcf0 Planned |
+| **pH Monitoring** | Measure water pH level (0-14 scale) | 📰 Planned |
+| **Chlorine Monitoring** | Measure chlorine concentration | 📰 Planned |
+| **Homie 3.0 Compatibility** | Standard MQTT messaging protocol | 📰 Planned |
+| **Display Integration** | Local display for readings | 📰 Planned |
 
-### \u26a1 Future Enhancements
+### ⚡ Future Enhancements
 
 - [ ] **Temperature compensation** for pH readings
 - [ ] **Automatic calibration** routines
@@ -46,27 +46,27 @@ The **Water Quality Monitor** is an **ESP8266-based circuit** designed to monito
 
 ---
 
-## \u26a1 Hardware Overview
+## ⚡ Hardware Overview
 
-### \ud83d\udcbb Required Parts (BOM)
+### 💻 Required Parts (BOM)
 
 | # | Component | Qty | Approx. Cost | Notes | Recommended Links |
 |---|-----------|:---:|:------------:|-------|------------------|
-| 1 | ESP8266 Development Board | 1 | 5\u201310\u20ac | NodeMCU or WeMos D1 Mini | [Amazon](https://amzn.to/2DPf0LJ), [AliExpress](https://www.aliexpress.com/) |
-| 2 | pH Sensor with BNC Probe | 1 | 20\u201350\u20ac | 0-14 pH range, BNC connector | [AliExpress](https://www.aliexpress.com/item/32797327021.html), [14core](https://14core.com/) |
-| 3 | Chlorine Sensor | 1 | 30\u201380\u20ac | Optional, for chlorine monitoring | Various suppliers |
-| 4 | ADC Module (optional) | 1 | 2\u20135\u20ac | For higher precision analog readings | [AliExpress](https://www.aliexpress.com/) |
-| 5 | Waterproof Enclosure | 1 | 10\u201320\u20ac | IP65+ for outdoor use | [Amazon](https://www.amazon.de/s?k=IP65+Geh\u00e4use) |
-| 6 | Calibration Solutions | 2 | 10\u201320\u20ac | pH 4.0 and pH 7.0 for calibration | [Amazon](https://www.amazon.de/s?k=pH+calibration+solution) |
-| **Total** | | | **~80\u2013180\u20ac** | Without chlorine sensor | |
+| 1 | ESP8266 Development Board | 1 | 5–10€ | NodeMCU or WeMos D1 Mini | [Amazon](https://amzn.to/2DPf0LJ), [AliExpress](https://www.aliexpress.com/) |
+| 2 | pH Sensor with BNC Probe | 1 | 20–50€ | 0-14 pH range, BNC connector | [AliExpress](https://www.aliexpress.com/item/32797327021.html), [14core](https://14core.com/) |
+| 3 | Chlorine Sensor | 1 | 30–80€ | Optional, for chlorine monitoring | Various suppliers |
+| 4 | ADC Module (optional) | 1 | 2–5€ | For higher precision analog readings | [AliExpress](https://www.aliexpress.com/) |
+| 5 | Waterproof Enclosure | 1 | 10–20€ | IP65+ for outdoor use | [Amazon](https://www.amazon.de/s?k=IP65+Gehäuse) |
+| 6 | Calibration Solutions | 2 | 10–20€ | pH 4.0 and pH 7.0 for calibration | [Amazon](https://www.amazon.de/s?k=pH+calibration+solution) |
+| **Total** | | | **~80–180€** | Without chlorine sensor | |
 
-### \u26a1 ESP8266 Board Options
+### ⚡ ESP8266 Board Options
 
 | Board | Pros | Cons | Recommended |
 |-------|------|------|-------------|
-| **NodeMCU** | Widely available, good documentation | Larger size | \u2705 Yes |
-| **WeMos D1 Mini** | Compact, breadboard-friendly | Limited GPIO | \u2705 Yes |
-| **ESP-12E/12F** | More GPIO, better RF performance | Requires breakout board | \u2705 Yes |
+| **NodeMCU** | Widely available, good documentation | Larger size | ✅ Yes |
+| **WeMos D1 Mini** | Compact, breadboard-friendly | Limited GPIO | ✅ Yes |
+| **ESP-12E/12F** | More GPIO, better RF performance | Requires breakout board | ✅ Yes |
 
 **Pinout References:**
 - [NodeMCU Pinout](https://nodemcu.readthedocs.io/en/release/pinout/)
@@ -76,16 +76,16 @@ The **Water Quality Monitor** is an **ESP8266-based circuit** designed to monito
 
 ---
 
-## \u26a1 Sensor Information
+## ⚡ Sensor Information
 
-### \ud83c\udf10 pH Sensor
+### 🌐 pH Sensor
 
 **Specifications:**
 - **Range:** 0-14 pH
 - **Resolution:** 0.01 pH
-- **Accuracy:** \u00b10.1 pH
+- **Accuracy:** ±0.1 pH
 - **Response Time:** < 1 minute
-- **Temperature Range:** 0-60\u00b0C
+- **Temperature Range:** 0-60°C
 - **Connector:** BNC
 - **Output:** Analog voltage (0-3.3V or 0-5V depending on module)
 
@@ -113,27 +113,27 @@ ESP8266 A0  pH Sensor Output (analog)
 - **Replace electrode** every 1-2 years (depending on usage)
 - **Avoid touching** the glass membrane
 
-### \u26a1 Chlorine Sensor (Optional)
+### ⚡ Chlorine Sensor (Optional)
 
 **Specifications (typical):**
 - **Range:** 0-10 ppm (free chlorine)
 - **Resolution:** 0.1 ppm
-- **Accuracy:** \u00b10.5 ppm
+- **Accuracy:** ±0.5 ppm
 - **Response Time:** < 2 minutes
 - **Output:** Analog voltage or digital (I2C/UART)
 
 **Sensor Types:**
-1. **Electrochemical sensors** \u2014 Most common, require regular calibration
-2. **Optical sensors** \u2014 More expensive, less maintenance
-3. **DPD colorimetric** \u2014 Chemical test method, manual or automated
+1. **Electrochemical sensors** — Most common, require regular calibration
+2. **Optical sensors** — More expensive, less maintenance
+3. **DPD colorimetric** — Chemical test method, manual or automated
 
 **Note:** Chlorine sensor selection depends on your specific requirements and budget. Research compatible sensors for ESP8266.
 
 ---
 
-## \u26a1 Circuit Design
+## ⚡ Circuit Design
 
-### \u26a1 Basic Circuit (pH Only)
+### ⚡ Basic Circuit (pH Only)
 
 ```text
 ESP8266 Development Board
@@ -147,7 +147,7 @@ ESP8266 Development Board
    BNC Connector [ pH Electrode Probe ]
 ```
 
-### \u26a1 Advanced Circuit (pH + Chlorine)
+### ⚡ Advanced Circuit (pH + Chlorine)
 
 ```text
 ESP8266 Development Board
@@ -169,7 +169,7 @@ ESP8266 Development Board
    D2  [ ADC SCL ]
 ```
 
-### \u26a1 Pin Assignment (WeMos D1 Mini)
+### ⚡ Pin Assignment (WeMos D1 Mini)
 
 | Sensor | ESP8266 Pin | WeMos D1 Pin | Notes |
 |--------|-------------|--------------|-------|
@@ -184,9 +184,9 @@ ESP8266 Development Board
 
 ---
 
-## \u26a1 MQTT Integration
+## ⚡ MQTT Integration
 
-### \u26a1 Homie 3.0 Convention
+### ⚡ Homie 3.0 Convention
 
 The Water Quality Monitor will follow the **Homie 3.0** MQTT convention for consistency with other Smart Swimming Pool modules.
 
@@ -215,7 +215,7 @@ homie/water-quality-monitor/chlorine/$properties
 homie/water-quality-monitor/chlorine/value
 ```
 
-### \u26a1 MQTT Topics
+### ⚡ MQTT Topics
 
 **State Topics:**
 ```text
@@ -249,9 +249,9 @@ homie/water-quality-monitor/status [0m{"pH":7.42,"chlorine":3.5,"temperature":2
 
 ---
 
-## \u26a1 Software Development
+## ⚡ Software Development
 
-### \u26a1 PlatformIO Setup
+### ⚡ PlatformIO Setup
 
 ```bash
 # Clone the repository
@@ -270,7 +270,7 @@ pio run --target monitor
 
 **Platform:** ESP8266 (WeMos D1 Mini or NodeMCU)
 
-### \u26a1 Required Libraries
+### ⚡ Required Libraries
 
 | Library | Purpose | Install Command |
 |---------|---------|-----------------|
@@ -281,7 +281,7 @@ pio run --target monitor
 | ESP8266WiFi | WiFi connectivity | Built-in |
 | PubSubClient | MQTT client | `pio lib install PubSubClient` |
 
-### \u26a1 Project Structure
+### ⚡ Project Structure
 
 ```text
 water-quality-monitor/
@@ -300,9 +300,9 @@ water-quality-monitor/
 
 ---
 
-## \u26a1 Calibration Procedures
+## ⚡ Calibration Procedures
 
-### \u26a1 pH Sensor Calibration
+### ⚡ pH Sensor Calibration
 
 **Required Materials:**
 - pH 4.0 calibration solution
@@ -337,12 +337,12 @@ water-quality-monitor/
    - Store electrode in storage solution or pH 7.0 buffer
 
 **Calibration Frequency:**
-- **Before first use** \u2014 Mandatory
-- **Every 1-2 months** \u2014 Regular maintenance
-- **After long storage** \u2014 If stored dry for > 1 week
-- **If readings seem inaccurate** \u2014 Troubleshooting
+- **Before first use** — Mandatory
+- **Every 1-2 months** — Regular maintenance
+- **After long storage** — If stored dry for > 1 week
+- **If readings seem inaccurate** — Troubleshooting
 
-### \u26a1 Chlorine Sensor Calibration (if applicable)
+### ⚡ Chlorine Sensor Calibration (if applicable)
 
 **Calibration depends on sensor type:**
 
@@ -361,22 +361,22 @@ water-quality-monitor/
 
 ---
 
-## \u26a1 Installation & Deployment
+## ⚡ Installation & Deployment
 
-### \u26a1 Enclosure Requirements
+### ⚡ Enclosure Requirements
 
 **For outdoor installation:**
-- **IP65+ rating** \u2014 Protection from water and dust
-- **Ventilation** \u2014 Prevent condensation buildup
-- **Cable glands** \u2014 For waterproof cable entry
-- **Mounting options** \u2014 Wall or pole mounting
+- **IP65+ rating** — Protection from water and dust
+- **Ventilation** — Prevent condensation buildup
+- **Cable glands** — For waterproof cable entry
+- **Mounting options** — Wall or pole mounting
 
 **Recommended enclosures:**
-- **ABS plastic** \u2014 Good chemical resistance
-- **Polycarbonate** \u2014 Impact resistant, UV stable
-- **Stainless steel** \u2014 Most durable, expensive
+- **ABS plastic** — Good chemical resistance
+- **Polycarbonate** — Impact resistant, UV stable
+- **Stainless steel** — Most durable, expensive
 
-### \u26a1 Sensor Placement
+### ⚡ Sensor Placement
 
 **pH Sensor:**
 - **Location:** In pool water, away from returns and skimmers
@@ -394,7 +394,7 @@ water-quality-monitor/
 - **Protect from physical damage**
 - **Ensure good water circulation** around sensors
 
-### \u26a1 Wiring Tips
+### ⚡ Wiring Tips
 
 1. **Use waterproof connectors** for all outdoor connections
 2. **Label all wires** for easy maintenance
@@ -404,9 +404,9 @@ water-quality-monitor/
 
 ---
 
-## \u26a1 Maintenance
+## ⚡ Maintenance
 
-### \u26a1 Regular Maintenance Schedule
+### ⚡ Regular Maintenance Schedule
 
 | Task | Frequency | Notes |
 |------|-----------|-------|
@@ -418,7 +418,7 @@ water-quality-monitor/
 | **Replace pH electrode** | Annually | Or when readings become unreliable |
 | **Replace calibration solutions** | Every 3-6 months | Or when contaminated |
 
-### \u26a1 Troubleshooting
+### ⚡ Troubleshooting
 
 | Issue | Possible Cause | Solution |
 |-------|---------------|----------|
@@ -430,7 +430,7 @@ water-quality-monitor/
 | **Sensor not responding** | Power issue | Check power supply to sensor |
 | **Condensation in enclosure** | Poor ventilation | Add ventilation or desiccant |
 
-### \u26a1 Storage
+### ⚡ Storage
 
 **Short-term storage (days to weeks):**
 - Store pH electrode **wet** in storage solution or pH 7.0 buffer
@@ -445,37 +445,37 @@ water-quality-monitor/
 
 ---
 
-## \u26a1 Safety Considerations
+## ⚡ Safety Considerations
 
-### \u26a0\ufe0f Electrical Safety
+### ⚠️ Electrical Safety
 
 - **Use low voltage (3.3V/5V)** for all electronics
-- **Keep electronics dry** \u2014 Use waterproof enclosures
+- **Keep electronics dry** — Use waterproof enclosures
 - **Use waterproof connectors** for all outdoor connections
 - **Ground all metal parts** if possible
 - **Use RCD/FI protection** for any mains-powered components
 
-### \u26a0\ufe0f Chemical Safety
+### ⚠️ Chemical Safety
 
-- **Handle calibration solutions with care** \u2014 Some may be corrosive
+- **Handle calibration solutions with care** — Some may be corrosive
 - **Wear gloves** when handling sensors and solutions
 - **Avoid skin contact** with calibration solutions
 - **Rinse with water** if solution contacts skin
-- **Dispose of old solutions properly** \u2014 Follow local regulations
+- **Dispose of old solutions properly** — Follow local regulations
 
-### \u26a0\ufe0f Pool Safety
+### ⚠️ Pool Safety
 
 - **Do not rely solely on this monitor** for pool safety
 - **Regularly test water manually** with test strips or kits
 - **Follow local health department guidelines** for pool water quality
 - **Keep pool chemicals properly stored** and labeled
-- **Never mix chemicals** \u2014 Can cause dangerous reactions
+- **Never mix chemicals** — Can cause dangerous reactions
 
 ---
 
-## \u26a1 Water Quality Guidelines
+## ⚡ Water Quality Guidelines
 
-### \u26a1 Recommended Ranges
+### ⚡ Recommended Ranges
 
 | Parameter | Ideal Range | Acceptable Range | Notes |
 |-----------|-------------|------------------|-------|
@@ -488,7 +488,7 @@ water-quality-monitor/
 | **Cyanuric Acid** | 30-50 ppm | 0-100 ppm | Chlorine stabilizer |
 | **Total Dissolved Solids (TDS)** | < 2000 ppm | < 5000 ppm | Water replacement indicator |
 
-### \u26a1 pH Importance
+### ⚡ pH Importance
 
 **Why pH matters:**
 - **Chlorine effectiveness:** Chlorine is most effective at pH 7.2-7.6
@@ -501,7 +501,7 @@ water-quality-monitor/
 - **To lower pH:** Add muriatic acid or sodium bisulfate
 - **Always add chemicals slowly** and retest frequently
 
-### \u26a1 Chlorine Importance
+### ⚡ Chlorine Importance
 
 **Why chlorine matters:**
 - **Sanitization:** Kills bacteria, algae, and other contaminants
@@ -509,47 +509,47 @@ water-quality-monitor/
 - **Residual effect:** Maintains protection between additions
 
 **Chlorine Types:**
-- **Liquid chlorine** \u2014 Sodium hypochlorite, fast acting
-- **Chlorine tablets** \u2014 Slow dissolving, stabilized
-- **Chlorine granules** \u2014 Fast dissolving, unstabilized
-- **Salt water generator** \u2014 Produces chlorine from salt
+- **Liquid chlorine** — Sodium hypochlorite, fast acting
+- **Chlorine tablets** — Slow dissolving, stabilized
+- **Chlorine granules** — Fast dissolving, unstabilized
+- **Salt water generator** — Produces chlorine from salt
 
 ---
 
-## \ud83e\udd1d Contributing
+## 🤝 Contributing
 
 We welcome contributions! This module is currently in the **planning and early development phase**, so there are many opportunities to help.
 
-### \u26a1 How You Can Help
+### ⚡ How You Can Help
 
-1. **Research sensors** \u2014 Find compatible pH and chlorine sensors
-2. **Test sensor accuracy** \u2014 Compare readings with commercial test kits
-3. **Develop calibration routines** \u2014 Implement automatic calibration
-4. **Design circuit** \u2014 Create schematic and PCB layout
-5. **Write firmware** \u2014 Implement sensor reading and MQTT publishing
-6. **Test in real conditions** \u2014 Validate performance in actual pool environments
-7. **Improve documentation** \u2014 Help create guides and tutorials
+1. **Research sensors** — Find compatible pH and chlorine sensors
+2. **Test sensor accuracy** — Compare readings with commercial test kits
+3. **Develop calibration routines** — Implement automatic calibration
+4. **Design circuit** — Create schematic and PCB layout
+5. **Write firmware** — Implement sensor reading and MQTT publishing
+6. **Test in real conditions** — Validate performance in actual pool environments
+7. **Improve documentation** — Help create guides and tutorials
 
-### \u26a1 Development Roadmap
+### ⚡ Development Roadmap
 
 | Phase | Tasks | Status |
 |-------|-------|--------|
-| **Phase 1: Research** | Sensor selection, compatibility testing | \ud83d\udc62 In Progress |
-| **Phase 2: Prototyping** | Breadboard testing, basic firmware | \ud83d\udcf0 Planned |
-| **Phase 3: Circuit Design** | Schematic, PCB design | \ud83d\udcf0 Planned |
-| **Phase 4: Firmware** | Sensor reading, MQTT integration | \ud83d\udcf0 Planned |
-| **Phase 5: Testing** | Lab testing, field testing | \ud83d\udcf0 Planned |
-| **Phase 6: Documentation** | User guides, troubleshooting | \ud83d\udcf0 Planned |
+| **Phase 1: Research** | Sensor selection, compatibility testing | 👢 In Progress |
+| **Phase 2: Prototyping** | Breadboard testing, basic firmware | 📰 Planned |
+| **Phase 3: Circuit Design** | Schematic, PCB design | 📰 Planned |
+| **Phase 4: Firmware** | Sensor reading, MQTT integration | 📰 Planned |
+| **Phase 5: Testing** | Lab testing, field testing | 📰 Planned |
+| **Phase 6: Documentation** | User guides, troubleshooting | 📰 Planned |
 
 ---
 
-## \ud83d\udcdc License
+## 📜 License
 
-[MIT License](LICENSE) \u2013 Free to use, modify, and share.
+[MIT License](LICENSE) – Free to use, modify, and share.
 
 ---
 
-## \ud83c\udf10 Community & Support
+## 🌐 Community & Support
 
 - **Discussions:** [GitHub Discussions](https://github.com/smart-swimmingpool/smart-swimmingpool.github.io/discussions)
 - **Website:** [smart-swimmingpool.com](https://smart-swimmingpool.com)
@@ -561,7 +561,7 @@ We welcome contributions! This module is currently in the **planning and early d
 
 ---
 
-## \ud83d\udce2 Related Projects
+## 📢 Related Projects
 
 | Project | Description |
 |---------|-------------|
@@ -573,35 +573,35 @@ We welcome contributions! This module is currently in the **planning and early d
 
 ---
 
-## \ud83d\udcbb Additional Resources
+## 💻 Additional Resources
 
 ### Sensors
-- [14core pH Sensor](https://14core.com/wiring-the-ph-power-of-hydrogen-ion-concentration-sensor-with-bnc-electrode-probe/) \u2014 Recommended pH sensor
-- [Atlas Scientific](https://www.atlas-scientific.com/) \u2014 High-quality water quality sensors
-- [DFRobot](https://www.dfrobot.com/) \u2014 Various water quality sensors
-- [Gravitech](https://www.gravitech.us/) \u2014 pH and ORP sensors
+- [14core pH Sensor](https://14core.com/wiring-the-ph-power-of-hydrogen-ion-concentration-sensor-with-bnc-electrode-probe/) — Recommended pH sensor
+- [Atlas Scientific](https://www.atlas-scientific.com/) — High-quality water quality sensors
+- [DFRobot](https://www.dfrobot.com/) — Various water quality sensors
+- [Gravitech](https://www.gravitech.us/) — pH and ORP sensors
 
 ### ESP8266
-- [ESP8266 Documentation](https://www.espressif.com/en/products/hardware/esp8266ex/overview) \u2014 Official docs
-- [NodeMCU Documentation](https://nodemcu.readthedocs.io/) \u2014 NodeMCU firmware
-- [WeMos D1 Mini](https://wiki.wemos.cc/products:d1:d1_mini) \u2014 Board information
+- [ESP8266 Documentation](https://www.espressif.com/en/products/hardware/esp8266ex/overview) — Official docs
+- [NodeMCU Documentation](https://nodemcu.readthedocs.io/) — NodeMCU firmware
+- [WeMos D1 Mini](https://wiki.wemos.cc/products:d1:d1_mini) — Board information
 
 ### MQTT
-- [MQTT Protocol](https://mqtt.org/) \u2014 MQTT specification
-- [Homie for ESP8266](https://github.com/homieiot/homie-esp8266) \u2014 MQTT framework
-- [PubSubClient](https://pubsubclient.knolleary.net/) \u2014 MQTT client library
+- [MQTT Protocol](https://mqtt.org/) — MQTT specification
+- [Homie for ESP8266](https://github.com/homieiot/homie-esp8266) — MQTT framework
+- [PubSubClient](https://pubsubclient.knolleary.net/) — MQTT client library
 
 ### Water Quality
-- [CDC Healthy Swimming](https://www.cdc.gov/healthywater/swimming/index.html) \u2014 Pool water quality guidelines
-- [WHO Water Quality Guidelines](https://www.who.int/water_sanitation_health/dwq/en/) \u2014 Water quality standards
-- [EPA Pool Water Quality](https://www.epa.gov/ground-water-and-drinking-water/national-primary-drinking-water-regulations) \u2014 Regulations and guidelines
+- [CDC Healthy Swimming](https://www.cdc.gov/healthywater/swimming/index.html) — Pool water quality guidelines
+- [WHO Water Quality Guidelines](https://www.who.int/water_sanitation_health/dwq/en/) — Water quality standards
+- [EPA Pool Water Quality](https://www.epa.gov/ground-water-and-drinking-water/national-primary-drinking-water-regulations) — Regulations and guidelines
 
 ### Calibration
-- [pH Calibration Guide](https://www.phionics.com/ph-calibration/) \u2014 pH sensor calibration
-- [Calibration Solutions](https://www.thermofisher.com/us/en/home/life-science/lab-chemicals/ph-buffers-ph-electrodes/ph-buffers.html) \u2014 pH buffer solutions
+- [pH Calibration Guide](https://www.phionics.com/ph-calibration/) — pH sensor calibration
+- [Calibration Solutions](https://www.thermofisher.com/us/en/home/life-science/lab-chemicals/ph-buffers-ph-electrodes/ph-buffers.html) — pH buffer solutions
 
 ---
 
 <p align="center">
-  Made with \u2764\ufe0f by the Smart Swimming Pool community
+  Made with ❤️ by the Smart Swimming Pool community
 </p>
